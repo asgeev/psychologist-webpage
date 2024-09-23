@@ -4,13 +4,17 @@ import Logo from '@/components/atoms/Logo';
 
 export default function Header() {
   return (
-    <div className="container sticky top-0 mx-auto flex items-center justify-between py-4">
-      <Logo />
-      <div className="max-md:hidden">
-        <Navigation />
-      </div>
-      <div className="md:hidden">
-        <MobileNavigation />
+    <div className="fixed top-0 z-20 w-full">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between py-4">
+          <Logo />
+          <div className="max-md:hidden">
+            <Navigation />
+          </div>
+          <div className="md:hidden">
+            <MobileNavigation />
+          </div>
+        </div>
       </div>
     </div>
   );

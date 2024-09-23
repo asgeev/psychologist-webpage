@@ -18,10 +18,8 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={`${inter.className} antialiased`}>
-        <div className="mx-4">
-          <Header />
-          {children}
-        </div>
+        <Header />
+        {children}
       </body>
     </html>
   );
