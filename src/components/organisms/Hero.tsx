@@ -18,13 +18,13 @@ export default function Hero() {
       />
       <div className="container relative mx-auto h-full">
         <div className="absolute bottom-0 right-0">
-          <div className="relative aspect-square h-72 min-[480px]:h-80 min-[480px]:h-96 md:h-[430px] lg:h-[500px] xl:h-[600px]">
+          <div className="relative aspect-square h-72 min-[480px]:h-96 sm:h-72 md:h-[430px] lg:h-[500px] xl:h-[600px]">
             <Image src="/woman.png" fill alt="woman" style={{ objectFit: 'cover' }} />
           </div>
         </div>
         <div className="mx-4 pt-24 xl:pt-32">
           <div className="container mx-auto flex flex-col justify-between">
-            <div className="space-y-4 sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-3xl">
+            <div className="max-w-sm space-y-4 md:max-w-md lg:max-w-xl xl:max-w-3xl">
               <p className="font-medium text-muted-foreground">Cześć, jestem Ewa!</p>
               <h1
                 className={cn(
