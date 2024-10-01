@@ -4,6 +4,9 @@ import AboutMe from '@/components/molecules/AboutMe';
 import Services from '@/components/molecules/Services';
 import PriceList from '@/components/molecules/PriceList';
 import Faq from '@/components/molecules/Faq';
+import Photos from '@/components/molecules/Photos';
+import Contact from '@/components/molecules/Contact';
+import Copyrights from '@/components/molecules/Copyrights';
 
 export default function Home() {
   return (
@@ -15,7 +18,10 @@ export default function Home() {
           <AboutMe />
           <Services />
           <PriceList />
+          <Photos />
           <Faq />
+          <Contact />
+          <Copyrights />
         </div>
       </div>
     </div>

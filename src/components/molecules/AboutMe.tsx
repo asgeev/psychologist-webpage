@@ -2,7 +2,7 @@ import Section from '@/components/molecules/Section';
 
 export default function AboutMe() {
   return (
-    <Section title={'O mnie'}>
+    <Section title={'O mnie'} id="o-mnie">
       <div className="text-muted-foreground">
         <p>
           Jestem psychologiem i terapeutą, oferującym wsparcie dzieciom, młodzieży oraz ich

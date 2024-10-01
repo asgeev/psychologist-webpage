@@ -3,7 +3,7 @@ import Card from '@/components/atoms/Card';
 
 export default function Faq() {
   return (
-    <Section title="FAQ">
+    <Section title="FAQ" id="faq">
       <div className="grid gap-4 lg:grid-cols-2 lg:gap-6">
         <Card title="Ile trwa terapia?">
           Zachęcam do zapoznania się z aktualnym cennikiem, gdzie znajdą Państwo szczegółowe

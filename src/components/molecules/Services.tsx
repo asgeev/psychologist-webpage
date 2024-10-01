@@ -3,7 +3,7 @@ import Section from '@/components/molecules/Section';
 
 export default function Services() {
   return (
-    <Section title="Co oferuję?">
+    <Section title="Co oferuję?" id="oferta">
       <div className="grid gap-4 lg:grid-cols-3 lg:gap-6">
         <Card title="Konsultacja psychologiczna">
           Zachęcam do zapoznania się z aktualnym cennikiem, gdzie znajdą Państwo szczegółowe

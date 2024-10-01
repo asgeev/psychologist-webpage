@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Sheet,
   SheetContent,
@@ -9,10 +11,13 @@ import {
 import { Menu } from 'lucide-react';
 import Navigation from '@/components/molecules/Navigation';
 import Logo from '@/components/atoms/Logo';
+import useNav from '@/hooks/useNav';
 
 export default function MobileNavigation() {
+  const { isOpen, setIsOpen } = useNav();
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={(open) => setIsOpen(open)}>
       <SheetTrigger>
         <Menu />
       </SheetTrigger>
