@@ -39,6 +39,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding: 144px;
+  }
   * {
     @apply border-border;
   }
