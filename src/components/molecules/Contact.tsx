@@ -6,7 +6,7 @@ import Map from '@/components/atoms/Map';
 
 export default function Contact() {
   return (
-    <Section title={'Kontakt'} id="kontakt">
+    <Section index={6} title={'Kontakt'} id="kontakt">
       <div className="max-lg:space-y-6 lg:grid lg:grid-cols-7 lg:gap-4">
         <div className="space-y-6 lg:col-span-3">
           <ContactItem title={'Telefon'}>
