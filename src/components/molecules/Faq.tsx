@@ -14,8 +14,7 @@ const questions = [
   },
   {
     title: 'Ile trwa spotkanie?',
-    description:
-      'Spotkanie trwa zazwyczaj około 50 minut. Pierwsze spotkanie jest spotkaniem zapoznawczym przy którym ustalmy',
+    description: 'Spotkanie trwa zazwyczaj około 50 minut.',
   },
   {
     title: 'Jakie są metody płatności?',
