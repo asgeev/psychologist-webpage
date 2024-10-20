@@ -34,7 +34,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <div className="rounded-full border border-muted-foreground p-1 drop-shadow-2xl">
-              <div className="relative aspect-square h-44 md:h-52">
+              <div className="relative aspect-square h-36 sm:h-44 md:h-52">
                 <Image
                   src="/ewa.jpg"
                   fill
@@ -46,14 +46,14 @@ export default function Hero() {
               </div>
             </div>
           </MotionDiv>
-          <div className="mx-4 space-y-8 text-center">
+          <div className="mx-4 space-y-4 text-center sm:space-y-8">
             <MotionDiv
               variants={variants}
               initial="initial"
               animate="animate"
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <p className="text-xl font-semibold">Cześć, jestem Ewa!</p>
+              <p className="font-semibold sm:text-xl">Cześć, jestem Ewa!</p>
             </MotionDiv>
             <MotionDiv
               variants={variants}
@@ -63,7 +63,7 @@ export default function Hero() {
             >
               <h1
                 className={cn(
-                  'text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl',
+                  'text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl',
                   montserrat.className,
                 )}
               >
@@ -77,7 +77,7 @@ export default function Hero() {
               animate="animate"
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <p className="mx-auto max-w-2xl text-lg font-medium">
+              <p className="mx-auto max-w-2xl font-medium sm:text-lg">
                 Jestem magistrem psychologii z kilkuletnim doświadczeniem i zajmuję się poradnictwem
                 psychologicznym dla dzieci i młodzieży
               </p>
