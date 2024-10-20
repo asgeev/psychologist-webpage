@@ -6,17 +6,17 @@ export default async function Services() {
     {
       title: 'Konsultacja psychologiczna',
       description:
-        'Zachęcam do zapoznania się z aktualnym cennikiem, gdzie znajdą Państwo szczegółowe informacje na temat kosztów konsultacji indywidualnych, psychoterapii indywidualnych i grupowych oraz sesji terapeutycznych online.',
+        'Spotkanie, którego celem jest zrozumienie problemu pacjenta i wstępna ocena jego sytuacji. Jest to forma krótkotrwałej pomocy. Podczas konsultacji staram się zebrać jak najwięcej informacji na temat trudności, z jakimi zmaga się pacjent, aby móc zaproponować odpowiednie wsparcie lub dalsze kroki.',
     },
     {
-      title: 'Konsultacja psychologiczna',
+      title: 'Poradnictwo psychologiczne',
       description:
-        'Zachęcam do zapoznania się z aktualnym cennikiem, gdzie znajdą Państwo szczegółowe informacje na temat kosztów konsultacji indywidualnych, psychoterapii indywidualnych i grupowych oraz sesji terapeutycznych online.',
+        'Forma wsparcia psychologicznego skierowana do osób, które potrzebują pomocy w radzeniu sobie z trudnościami życiowymi, emocjonalnymi lub relacyjnymi. Skupia się na bieżących trudnościach, takich jak problemy z relacjami, trudności w szkole, stres czy wątpliwości dotyczące ważnych życiowych decyzji.',
     },
     {
-      title: 'Konsultacja psychologiczna',
+      title: 'Mediacja rodzinna',
       description:
-        'Zachęcam do zapoznania się z aktualnym cennikiem, gdzie znajdą Państwo szczegółowe informacje na temat kosztów konsultacji indywidualnych, psychoterapii indywidualnych i grupowych oraz sesji terapeutycznych online.',
+        'Proces, w którym neutralna i bezstronna osoba, zwana mediatorem, pomaga członkom rodziny w rozwiązaniu konfliktów lub sporów, bez konieczności angażowania sądu. Mediacja ma na celu umożliwienie stronom dialogu, wypracowanie wspólnych rozwiązań i osiągnięcie porozumienia, które będzie satysfakcjonujące dla wszystkich zaangażowanych osób.',
     },
   ];
 

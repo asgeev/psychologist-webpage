@@ -7,7 +7,7 @@ export default function PriceList() {
       <div className="space-y-2 md:max-w-2xl">
         <PriceItem name="Konsultacja psychologiczna" price="150 zł" />
         <PriceItem name="Poradnictwo psychologiczne" price="150 zł" />
-        <PriceItem name="Mediacja" price="od 200 zł" />
+        <PriceItem name="Mediacja rodzinna" price="od 200 zł" />
       </div>
     </Section>
   );

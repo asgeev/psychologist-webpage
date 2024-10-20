@@ -2,75 +2,107 @@ import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import CTAButton from '@/components/atoms/CTAButton';
-import { MotionDiv, MotionP } from '@/components/atoms/Motion';
+import { MotionDiv } from '@/components/atoms/Motion';
+import { ChevronsDown } from 'lucide-react';
+import Link from 'next/link';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 const variants = {
   initial: { opacity: 0, y: -10 },
   animate: { opacity: 1, y: 0 },
 };
+
 export default function Hero() {
   return (
-    <div className="relative h-[700px] sm:h-[500px] lg:h-[600px] xl:h-[700px]">
+    <div className="relative flex h-screen items-center justify-center">
       <Image
         src="/background.jpg"
         fill
-        quality={90}
         priority
-        alt="Backgound"
-        className="absolute top-0 -z-10 h-full w-full"
+        alt="Background"
+        className="absolute -z-10 h-full w-full"
         style={{ objectFit: 'cover' }}
       />
-      <div className="container relative mx-auto h-full">
-        <div className="absolute bottom-0 right-0">
+      <div className="absolute h-full w-full bg-gradient-to-b from-black opacity-15"></div>
+
+      <div className="container z-20">
+        <div className="flex flex-col items-center justify-center gap-10">
           <MotionDiv
             variants={variants}
             initial="initial"
             animate="animate"
-            transition={{ duration: 0.7, delay: 0.9 }}
-            className="relative aspect-square h-72 min-[480px]:h-96 sm:h-72 md:h-[430px] lg:h-[500px] xl:h-[600px]"
+            transition={{ duration: 0.6 }}
           >
-            <Image src="/woman.png" fill alt="woman" style={{ objectFit: 'cover' }} />
+            <div className="rounded-full border border-muted-foreground p-1 drop-shadow-2xl">
+              <div className="relative aspect-square h-44 md:h-52">
+                <Image
+                  src="/ewa.jpg"
+                  fill
+                  priority
+                  alt="woman"
+                  className="rounded-full"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
           </MotionDiv>
-        </div>
-        <div className="mx-4 pt-24 xl:pt-32">
-          <div className="container mx-auto flex flex-col justify-between">
+          <div className="mx-4 space-y-8 text-center">
             <MotionDiv
               variants={variants}
               initial="initial"
               animate="animate"
-              transition={{ duration: 0.7 }}
-              className="max-w-sm space-y-4 md:max-w-md lg:max-w-xl xl:max-w-3xl"
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <p className="font-medium text-muted-foreground">Cześć, jestem Ewa!</p>
+              <p className="text-xl font-semibold">Cześć, jestem Ewa!</p>
+            </MotionDiv>
+            <MotionDiv
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               <h1
                 className={cn(
-                  'text-4xl font-bold tracking-wide md:text-6xl lg:text-7xl xl:text-8xl',
+                  'text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl',
                   montserrat.className,
                 )}
               >
-                W czym mogę pomóc?
+                W czym mogę <br></br>
+                <span className="w-min bg-primary px-2 text-secondary">pomóc?</span>
               </h1>
-              <MotionP
-                variants={variants}
-                initial="initial"
-                animate="animate"
-                transition={{ duration: 0.7, delay: 0.3 }}
-              >
+            </MotionDiv>
+            <MotionDiv
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <p className="mx-auto max-w-2xl text-lg font-medium">
                 Jestem magistrem psychologii z kilkuletnim doświadczeniem i zajmuję się poradnictwem
                 psychologicznym dla dzieci i młodzieży
-              </MotionP>
-              <MotionDiv
-                variants={variants}
-                initial="initial"
-                animate="animate"
-                transition={{ duration: 0.7, delay: 0.6 }}
-              >
-                <CTAButton />
-              </MotionDiv>
+              </p>
             </MotionDiv>
-            <div></div>
+            <MotionDiv
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <CTAButton />
+            </MotionDiv>
           </div>
+
+          <MotionDiv
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.6, delay: 1.4 }}
+            className="absolute bottom-2 animate-bounce"
+          >
+            <Link href="/#o-mnie">
+              <ChevronsDown size={40} />
+            </Link>
+          </MotionDiv>
         </div>
       </div>
     </div>
