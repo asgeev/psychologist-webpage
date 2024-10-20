@@ -14,7 +14,7 @@ const variants = {
 
 export default function Hero() {
   return (
-    <div className="relative flex h-screen items-center justify-center">
+    <div className="relative flex h-svh items-center justify-center">
       <Image
         src="/background.jpg"
         fill
